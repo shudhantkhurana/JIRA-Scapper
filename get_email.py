@@ -57,6 +57,6 @@ def fetch_email(accountId):
             logging.error(f"Request failed with status code {response.status_code}")
             return None
     except:
-        logging.error('Something went Wrong!')    
+        logging.error(f'Something went Wrong while fetching e-mail Address for accountId : {accountId}')    
         return None
 
