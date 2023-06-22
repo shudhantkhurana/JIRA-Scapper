@@ -78,4 +78,3 @@ def getIssues(projectKey):
         logging.error(f"Something went Wrong while fetching issues for projectKey : {projectKey}")
         return None
         
-getIssues('ES')
