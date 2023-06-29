@@ -8,9 +8,9 @@ logging.config.fileConfig('logging.conf')
 def fetch_email(accountId):
     
     # Set up authentication credentials
-    username = jira_username()
-    api_token = jira_keys()
-    base_url = jira_url()
+    username = JIRA_USERNAME
+    api_token = JIRA_API_KEY
+    base_url = JIRA_URL
     api_url = base_url + '/rest/api/3'
 
 
@@ -60,3 +60,4 @@ def fetch_email(accountId):
         logging.error(f'Something went Wrong while fetching e-mail Address for accountId : {accountId}')    
         return None
 
+print(fetch_email('712020:d477ee35-3fb4-4557-b3a9-1bfb125e6303'))

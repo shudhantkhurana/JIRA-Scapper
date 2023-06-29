@@ -7,9 +7,9 @@ logging.config.fileConfig('logging.conf')
 
 def getIssues(projectKey):
     # Set up authentication credentials
-    username = jira_username()
-    api_token = jira_keys()
-    base_url = jira_url()
+    username = JIRA_USERNAME
+    api_token = JIRA_API_KEY
+    base_url = JIRA_URL
     api_url = base_url + '/rest/api/3'
 
     # Set up headers with authentication
