@@ -62,5 +62,3 @@ def allProjects():
     except:
         logging.error('Something went wrong while fetching projects with given Config')
         return None
-    
-    

@@ -43,11 +43,12 @@ def fetch_email(accountId):
             
             # Fetching the e-mail Address
             userEmail = json_response[0]['emailAddress']
+            displayName = json_response[0]['displayName']
             
             # verifying
             if userEmail != 'null':
                 logging.info(f'e-mail Address found for accountId : {accountId} ')
-                return userEmail
+                return userEmail,displayName
                 # type - str
             else:
                 logging.error(f'No e-mail Address found for accountId : {accountId} ')
@@ -60,4 +61,3 @@ def fetch_email(accountId):
         logging.error(f'Something went Wrong while fetching e-mail Address for accountId : {accountId}')    
         return None
 
-print(fetch_email('712020:d477ee35-3fb4-4557-b3a9-1bfb125e6303'))
