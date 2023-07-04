@@ -15,10 +15,13 @@ mail = Mail(app)
 @app.route('/', methods=["GET"])
 def index():
     try:
+        # fetching all projects
         projects = allProjects()
         for project in projects:
             projectName = project['projectName']
             projectKey = project['projectKey']
+            
+            # getting all issues and assignees
             allAssignee = getIssues(projectKey)
             if allAssignee == None:
                 continue
@@ -26,8 +29,35 @@ def index():
             for assignee in allAssignee:
                 if assignee != 'notAssigned':
                     accountId = assignee
+                    
+                    # fetching emailId and displayName
                     email,displayName = fetch_email(accountId)
-                    logging.info(f"{email},{displayName}")
+                    
+                    # creating a dict of the format
+                    
+                    # {
+                    #     'status1' : [
+                    #         {
+                    #             'key' : 'issueId1',
+                    #             'summary' : "Issue summary 1",
+                    #         },
+                    #         {
+                    #             'key' : 'issueId2',
+                    #             'summary' : "Issue summary 2",
+                    #         },
+                    #     ],
+                    #     'status2' : [
+                    #         {
+                    #             'key' : 'issueId3',
+                    #             'summary' : "Issue summary 3",
+                    #         },
+                    #         {
+                    #             'key' : 'issueId4',
+                    #             'summary' : "Issue summary 4",
+                    #         },
+                    #     ]
+                    # }
+                    
                     allStatusTypes = dict()
                     for issue in allAssignee[assignee]:
                         if issue['status'] not in allStatusTypes:
@@ -66,7 +96,6 @@ def index():
         response.headers['Content-Type'] = 'appplication/json'
         return response
         
-        # return f'An error occurred while sending the email: {str(e)}'
 
 
 if __name__ == '__main__':
