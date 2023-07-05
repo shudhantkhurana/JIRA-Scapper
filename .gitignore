@@ -1,3 +1,4 @@
 config.py
 app.log
 mailConfig.py
+flask.log
