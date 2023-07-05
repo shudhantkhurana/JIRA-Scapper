@@ -2,7 +2,8 @@ import requests
 from config import *
 import json
 import logging.config
-logging.config.fileConfig('logging.conf')
+logging.config.fileConfig('logging.conf', disable_existing_loggers=False)
+app_logger = logging.getLogger('app')
 
 
 def getIssues(projectKey):
@@ -27,12 +28,12 @@ def getIssues(projectKey):
     # Make the API request
     try:
         response = requests.get(search_url, auth=(username, api_token), headers=headers, params={'jql': jql})
-        logging.info(f'Requesting for issues for projectKey : {projectKey}')
+        app_logger.info(f'Requesting for issues for projectKey : {projectKey}')
 
 
         # Check if the request was successful
         if response.status_code == 200:
-            logging.info(f'Response Recieved for projectKey : {projectKey}')
+            app_logger.info(f'Response Recieved for projectKey : {projectKey}')
             # Retrieve the JSON response
             json_response = response.json()
 
@@ -63,18 +64,18 @@ def getIssues(projectKey):
                             tasks[issues[issue]['fields']['assignee']['accountId']].append({'key': f"{issues[issue]['key']}", 'summary': f"{issues[issue]['fields']['summary']}", 'status' : f"{issues[issue]['fields']['status']['name']}" })
 
                     count += 1
-            logging.info(f"{count} issuse(s) found for projectKey : {projectKey}")
+            app_logger.info(f"{count} issuse(s) found for projectKey : {projectKey}")
             # Storing the total number of issues
             total_issues = json_response['total']
             tasks = json.loads(json.dumps(tasks, indent=4))
-            logging.info(f'Response Scrapped Successfully for projectKey : {projectKey}')
+            app_logger.info(f'Response Scrapped Successfully for projectKey : {projectKey}')
             return tasks
             # type dict
         else:
-            logging.error(f"Request to fetch issues for projectKey:{projectKey} failed with status code {response.status_code}")
+            app_logger.error(f"Request to fetch issues for projectKey:{projectKey} failed with status code {response.status_code}")
             return None
             
     except:
-        logging.error(f"Something went Wrong while fetching issues for projectKey : {projectKey}")
+        app_logger.error(f"Something went Wrong while fetching issues for projectKey : {projectKey}")
         return None
         

@@ -2,7 +2,8 @@ import requests
 import json
 from config import *
 import logging.config
-logging.config.fileConfig('logging.conf')
+logging.config.fileConfig('logging.conf', disable_existing_loggers=False)
+app_logger = logging.getLogger('app')
 
 
 def fetch_email(accountId):
@@ -30,13 +31,13 @@ def fetch_email(accountId):
     }
     try:
         # Make the API request
-        logging.info(f'Requesting Response for accountId : {accountId}')
+        app_logger.info(f'Requesting Response for accountId : {accountId}')
         response = requests.get(search_url, auth=(username, api_token), headers=headers, params=query)
         
         # Check if the request was successful
         if response.status_code == 200:
             
-            logging.info(f'Response Recieved for accountId : {accountId}')
+            app_logger.info(f'Response Recieved for accountId : {accountId}')
             
             # Retrieve the JSON response
             json_response = response.json()
@@ -47,17 +48,17 @@ def fetch_email(accountId):
             
             # verifying
             if userEmail != 'null':
-                logging.info(f'e-mail Address found for accountId : {accountId} ')
+                app_logger.info(f'e-mail Address found for accountId : {accountId} ')
                 return userEmail,displayName
                 # type - str
             else:
-                logging.error(f'No e-mail Address found for accountId : {accountId} ')
+                app_logger.error(f'No e-mail Address found for accountId : {accountId} ')
                 return None
         
         else:
-            logging.error(f"Request failed with status code {response.status_code}")
+            app_logger.error(f"Request failed with status code {response.status_code}")
             return None
     except:
-        logging.error(f'Something went Wrong while fetching e-mail Address for accountId : {accountId}')    
+        app_logger.error(f'Something went Wrong while fetching e-mail Address for accountId : {accountId}')    
         return None
 

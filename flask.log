@@ -571,3 +571,216 @@ UnboundLocalError: cannot access local variable 'msg' where it is not associated
 2023-07-04 16:00:50 [INFO] root: 0 issuse(s) found for projectKey : SUP
 2023-07-04 16:00:50 [INFO] root: Response Scrapped Successfully for projectKey : SUP
 2023-07-04 16:00:50 [INFO] werkzeug: 127.0.0.1 - - [04/Jul/2023 16:00:50] "GET / HTTP/1.1" 200 -
+2023-07-05 15:18:19 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-05 15:18:19 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2023-07-05 15:18:19 [INFO] werkzeug:  * Restarting with stat
+2023-07-05 15:18:20 [WARNING] werkzeug:  * Debugger is active!
+2023-07-05 15:18:20 [INFO] werkzeug:  * Debugger PIN: 102-312-056
+2023-07-05 15:19:21 [INFO] root: Requesting projects for given Config
+2023-07-05 15:19:22 [INFO] root: Response recieved for given Config
+2023-07-05 15:19:22 [INFO] root: All projects Scraped for given
+2023-07-05 15:19:23 [INFO] root: Requesting for issues for projectKey : ES
+2023-07-05 15:19:23 [INFO] root: Response Recieved for projectKey : ES
+2023-07-05 15:19:23 [INFO] root: 23 issuse(s) found for projectKey : ES
+2023-07-05 15:19:23 [INFO] root: Response Scrapped Successfully for projectKey : ES
+2023-07-05 15:19:23 [INFO] root: Requesting Response for accountId : 712020:1ebb1ef2-2a5c-4c2b-9ebd-bf8c2294bc26
+2023-07-05 15:19:24 [INFO] root: Response Recieved for accountId : 712020:1ebb1ef2-2a5c-4c2b-9ebd-bf8c2294bc26
+2023-07-05 15:19:24 [INFO] root: e-mail Address found for accountId : 712020:1ebb1ef2-2a5c-4c2b-9ebd-bf8c2294bc26 
+2023-07-05 15:19:34 [INFO] root: Requesting Response for accountId : 712020:d477ee35-3fb4-4557-b3a9-1bfb125e6303
+2023-07-05 15:19:34 [INFO] root: Response Recieved for accountId : 712020:d477ee35-3fb4-4557-b3a9-1bfb125e6303
+2023-07-05 15:19:34 [INFO] root: e-mail Address found for accountId : 712020:d477ee35-3fb4-4557-b3a9-1bfb125e6303 
+2023-07-05 15:19:41 [INFO] root: Requesting for issues for projectKey : SUP
+2023-07-05 15:19:41 [INFO] root: Response Recieved for projectKey : SUP
+2023-07-05 15:19:41 [INFO] root: 0 issuse(s) found for projectKey : SUP
+2023-07-05 15:19:41 [INFO] root: Response Scrapped Successfully for projectKey : SUP
+2023-07-05 15:19:41 [INFO] werkzeug: 127.0.0.1 - - [05/Jul/2023 15:19:41] "GET / HTTP/1.1" 200 -
+2023-07-05 16:20:16 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-05 16:20:16 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2023-07-05 16:20:16 [INFO] werkzeug:  * Restarting with stat
+2023-07-05 16:20:17 [WARNING] werkzeug:  * Debugger is active!
+2023-07-05 16:20:17 [INFO] werkzeug:  * Debugger PIN: 501-872-545
+2023-07-05 16:20:31 [INFO] root: Requesting projects for given Config
+2023-07-05 16:20:32 [INFO] root: Response recieved for given Config
+2023-07-05 16:20:32 [INFO] root: All projects Scraped for given
+2023-07-05 16:20:33 [INFO] root: Requesting for issues for projectKey : ES
+2023-07-05 16:20:33 [INFO] root: Response Recieved for projectKey : ES
+2023-07-05 16:20:33 [INFO] root: 23 issuse(s) found for projectKey : ES
+2023-07-05 16:20:33 [INFO] root: Response Scrapped Successfully for projectKey : ES
+2023-07-05 16:20:33 [INFO] root: Requesting Response for accountId : 712020:1ebb1ef2-2a5c-4c2b-9ebd-bf8c2294bc26
+2023-07-05 16:20:34 [INFO] root: Response Recieved for accountId : 712020:1ebb1ef2-2a5c-4c2b-9ebd-bf8c2294bc26
+2023-07-05 16:20:34 [INFO] root: e-mail Address found for accountId : 712020:1ebb1ef2-2a5c-4c2b-9ebd-bf8c2294bc26 
+2023-07-05 16:20:41 [INFO] root: Requesting Response for accountId : 712020:d477ee35-3fb4-4557-b3a9-1bfb125e6303
+2023-07-05 16:20:41 [INFO] root: Response Recieved for accountId : 712020:d477ee35-3fb4-4557-b3a9-1bfb125e6303
+2023-07-05 16:20:41 [INFO] root: e-mail Address found for accountId : 712020:d477ee35-3fb4-4557-b3a9-1bfb125e6303 
+2023-07-05 16:20:51 [INFO] root: Requesting for issues for projectKey : SUP
+2023-07-05 16:20:51 [INFO] root: Response Recieved for projectKey : SUP
+2023-07-05 16:20:51 [INFO] root: 0 issuse(s) found for projectKey : SUP
+2023-07-05 16:20:51 [INFO] root: Response Scrapped Successfully for projectKey : SUP
+2023-07-05 16:20:51 [INFO] werkzeug: 127.0.0.1 - - [05/Jul/2023 16:20:51] "GET / HTTP/1.1" 200 -
+
+
+
+2023-07-05 16:50:46,051 - flask - INFO - Email sent to accountId : 712020:1ebb1ef2-2a5c-4c2b-9ebd-bf8c2294bc26
+2023-07-05 16:50:52,657 - flask - INFO - Email sent to accountId : 712020:d477ee35-3fb4-4557-b3a9-1bfb125e6303
+2023-07-05 17:11:47,625 - flask - INFO - Email sent to accountId : 712020:1ebb1ef2-2a5c-4c2b-9ebd-bf8c2294bc26
+2023-07-05 17:11:54,494 - flask - INFO - Email sent to accountId : 712020:d477ee35-3fb4-4557-b3a9-1bfb125e6303
+2023-07-05 18:29:20,996 - flask - INFO - Email sent to accountId : 712020:1ebb1ef2-2a5c-4c2b-9ebd-bf8c2294bc26
+2023-07-05 18:29:27,412 - flask - INFO - Email sent to accountId : 712020:d477ee35-3fb4-4557-b3a9-1bfb125e6303
+2023-07-05 18:36:31,095 - flask - INFO - Email sent to accountId : 712020:1ebb1ef2-2a5c-4c2b-9ebd-bf8c2294bc26
+2023-07-05 18:36:37,318 - flask - INFO - Email sent to accountId : 712020:d477ee35-3fb4-4557-b3a9-1bfb125e6303
+2023-07-05 18:36:38,032 - flask - INFO - b'{"message":"Email sent to all users"}\n'
+2023-07-05 18:40:48,651 - flask - INFO - Email sent to accountId : 712020:1ebb1ef2-2a5c-4c2b-9ebd-bf8c2294bc26
+2023-07-05 18:40:54,744 - flask - INFO - Email sent to accountId : 712020:d477ee35-3fb4-4557-b3a9-1bfb125e6303
+2023-07-05 18:40:55,431 - flask - INFO - b'{"message":"Email sent to all users"}\n'
+2023-07-05 18:42:20,784 - flask - INFO - Email sent to accountId : 712020:1ebb1ef2-2a5c-4c2b-9ebd-bf8c2294bc26
+2023-07-05 18:42:26,940 - flask - INFO - Email sent to accountId : 712020:d477ee35-3fb4-4557-b3a9-1bfb125e6303
+2023-07-05 18:42:27,648 - flask - INFO - b'{"message":"Email sent to all users"}\n'
+2023-07-05 18:42:46,697 - flask - INFO - Email sent to accountId : 712020:1ebb1ef2-2a5c-4c2b-9ebd-bf8c2294bc26
+2023-07-05 18:42:53,523 - flask - INFO - Email sent to accountId : 712020:d477ee35-3fb4-4557-b3a9-1bfb125e6303
+2023-07-05 18:42:54,203 - flask - INFO - b'{"message":"Email sent to all users"}\n'
+2023-07-05 18:47:40,417 - flask - INFO - Server Running on Port Number 60669
+2023-07-05 18:47:40,417 - flask - INFO - Running on http://localhost:60669
+2023-07-05 18:47:54,558 - flask - INFO - Email sent to accountId : 712020:1ebb1ef2-2a5c-4c2b-9ebd-bf8c2294bc26
+2023-07-05 18:48:01,414 - flask - INFO - Email sent to accountId : 712020:d477ee35-3fb4-4557-b3a9-1bfb125e6303
+2023-07-05 18:48:02,092 - flask - INFO - b'{"message":"Email sent to all users"}\n'
+2023-07-05 18:48:52,485 - flask - INFO - Server Running on Port Number 60717
+2023-07-05 18:48:52,486 - flask - INFO - Running on http://localhost:60717
+2023-07-05 18:49:11,937 - flask - INFO - Email sent to accountId : 712020:1ebb1ef2-2a5c-4c2b-9ebd-bf8c2294bc26
+2023-07-05 18:49:18,246 - flask - INFO - Email sent to accountId : 712020:d477ee35-3fb4-4557-b3a9-1bfb125e6303
+2023-07-05 20:14:12,026 - flask - INFO - Server Running on Port Number 61570
+2023-07-05 20:14:12,027 - flask - INFO - Running on http://localhost:61570
+2023-07-05 20:16:36,761 - flask - INFO - Server Running on Port Number 61593
+2023-07-05 20:16:36,761 - flask - INFO - Running on http://localhost:61593
+2023-07-05 20:17:18,592 - flask - INFO - Server Running on Port Number 61603
+2023-07-05 20:17:18,592 - flask - INFO - Running on http://localhost:61603
+2023-07-05 20:18:38,856 - flask - INFO - Server Running on Port Number 61654
+2023-07-05 20:18:38,856 - flask - INFO - Running on http://localhost:61654
+2023-07-05 20:21:56,318 - flask - INFO - Email sent to accountId : 712020:1ebb1ef2-2a5c-4c2b-9ebd-bf8c2294bc26
+2023-07-05 20:22:02,100 - flask - INFO - Email sent to accountId : 712020:d477ee35-3fb4-4557-b3a9-1bfb125e6303
+2023-07-05 20:22:02,823 - flask - INFO - Email Sent to all Users
+2023-07-05 20:31:26,157 - flask - INFO - Server Running on Port Number 61816
+2023-07-05 20:31:26,158 - flask - INFO - Running on http://localhost:61816
+2023-07-05 21:01:27,098 - flask - INFO - Server Running on Port Number 62117
+2023-07-05 21:01:27,098 - flask - INFO - Running on http://localhost:62117
+2023-07-05 21:01:58,324 - flask - INFO - Email sent to accountId : 712020:1ebb1ef2-2a5c-4c2b-9ebd-bf8c2294bc26
+2023-07-05 21:02:04,861 - flask - INFO - Email sent to accountId : 712020:d477ee35-3fb4-4557-b3a9-1bfb125e6303
+2023-07-05 21:02:05,528 - flask - INFO - Email Sent to all Users
+2023-07-05 21:02:05,532 - flask - INFO - GET request -- status-code : 200
+2023-07-05 21:02:07,595 - flask - INFO - Server Shutdown Successful
+2023-07-05 21:18:48,368 - flask - INFO - Server Running on Port Number 62297
+2023-07-05 21:18:48,368 - flask - INFO - Running on http://localhost:62297
+2023-07-05 21:19:01,633 - flask - INFO - Email sent to accountId : 712020:1ebb1ef2-2a5c-4c2b-9ebd-bf8c2294bc26
+2023-07-05 21:19:07,510 - flask - INFO - Email sent to accountId : 712020:d477ee35-3fb4-4557-b3a9-1bfb125e6303
+2023-07-05 21:19:08,281 - flask - INFO - Email Sent to all Users
+2023-07-05 21:19:08,283 - flask - INFO - GET request -- status-code : 200
+2023-07-05 21:24:36,410 - flask - INFO - Server Running on Port Number 62377
+2023-07-05 21:24:36,410 - flask - INFO - Running on http://localhost:62377
+
+
+2023-07-05 21:26:05,199 - flask - INFO - Email sent to accountId : 712020:1ebb1ef2-2a5c-4c2b-9ebd-bf8c2294bc26
+2023-07-05 21:26:11,553 - flask - INFO - Email sent to accountId : 712020:d477ee35-3fb4-4557-b3a9-1bfb125e6303
+2023-07-05 21:26:12,177 - flask - INFO - Email Sent to all Users
+2023-07-05 21:26:12,182 - flask - INFO - GET request -- status-code : 200
+2023-07-05 21:31:05,095 - flask - INFO - Server Running on Port Number 62480
+2023-07-05 21:31:05,095 - flask - INFO - Running on http://localhost:62480
+2023-07-05 21:31:36,568 - flask - INFO - Email sent to accountId : 712020:1ebb1ef2-2a5c-4c2b-9ebd-bf8c2294bc26
+2023-07-05 21:31:42,771 - flask - INFO - Email sent to accountId : 712020:d477ee35-3fb4-4557-b3a9-1bfb125e6303
+2023-07-05 21:31:43,496 - flask - INFO - Email Sent to all Users
+2023-07-05 21:32:33,710 - flask - INFO - Server Running on Port Number 62518
+2023-07-05 21:32:33,710 - flask - INFO - Running on http://localhost:62518
+2023-07-05 21:35:56,126 - flask - INFO - Server Running on Port Number 62563
+2023-07-05 21:35:56,126 - flask - INFO - Running on http://localhost:62563
+2023-07-05 21:36:12,216 - flask - INFO - Email sent to accountId : 712020:1ebb1ef2-2a5c-4c2b-9ebd-bf8c2294bc26
+2023-07-05 21:36:18,773 - flask - INFO - Email sent to accountId : 712020:d477ee35-3fb4-4557-b3a9-1bfb125e6303
+2023-07-05 21:36:19,496 - flask - INFO - Email Sent to all Users
+2023-07-05 21:36:19,502 - flask - INFO - GET request -- status-code : 200
+2023-07-05 21:37:42,141 - flask - INFO - Server Running on Port Number 62587
+2023-07-05 21:37:42,141 - flask - INFO - Running on http://localhost:62587
+2023-07-05 21:37:57,259 - flask - INFO - Email sent to accountId : 712020:1ebb1ef2-2a5c-4c2b-9ebd-bf8c2294bc26
+2023-07-05 21:38:03,215 - flask - INFO - Email sent to accountId : 712020:d477ee35-3fb4-4557-b3a9-1bfb125e6303
+2023-07-05 21:38:03,840 - flask - INFO - Email Sent to all Users
+2023-07-05 21:38:15,544 - flask - INFO - Email sent to accountId : 712020:1ebb1ef2-2a5c-4c2b-9ebd-bf8c2294bc26
+2023-07-05 21:38:21,924 - flask - INFO - Email sent to accountId : 712020:d477ee35-3fb4-4557-b3a9-1bfb125e6303
+2023-07-05 21:38:22,598 - flask - INFO - Email Sent to all Users
+2023-07-05 21:38:35,605 - flask - INFO - Email sent to accountId : 712020:1ebb1ef2-2a5c-4c2b-9ebd-bf8c2294bc26
+2023-07-05 21:38:42,315 - flask - INFO - Email sent to accountId : 712020:d477ee35-3fb4-4557-b3a9-1bfb125e6303
+2023-07-05 21:38:42,980 - flask - INFO - Email Sent to all Users
+2023-07-05 21:38:55,631 - flask - INFO - Email sent to accountId : 712020:1ebb1ef2-2a5c-4c2b-9ebd-bf8c2294bc26
+2023-07-05 21:39:01,335 - flask - INFO - Email sent to accountId : 712020:d477ee35-3fb4-4557-b3a9-1bfb125e6303
+2023-07-05 21:39:02,013 - flask - INFO - Email Sent to all Users
+2023-07-05 21:39:11,865 - flask - INFO - Email sent to accountId : 712020:1ebb1ef2-2a5c-4c2b-9ebd-bf8c2294bc26
+2023-07-05 21:39:18,560 - flask - INFO - Email sent to accountId : 712020:d477ee35-3fb4-4557-b3a9-1bfb125e6303
+2023-07-05 21:39:19,202 - flask - INFO - Email Sent to all Users
+2023-07-05 21:39:29,097 - flask - INFO - Email sent to accountId : 712020:1ebb1ef2-2a5c-4c2b-9ebd-bf8c2294bc26
+2023-07-05 21:39:35,344 - flask - INFO - Server Running on Port Number 62661
+2023-07-05 21:39:35,344 - flask - INFO - Running on http://localhost:62661
+2023-07-05 21:39:51,869 - flask - INFO - Email sent to accountId : 712020:1ebb1ef2-2a5c-4c2b-9ebd-bf8c2294bc26
+2023-07-05 21:39:59,070 - flask - INFO - Email sent to accountId : 712020:d477ee35-3fb4-4557-b3a9-1bfb125e6303
+2023-07-05 21:39:59,788 - flask - INFO - Email Sent to all Users
+2023-07-05 21:39:59,794 - flask - INFO - GET request -- status-code : 200
+2023-07-05 21:41:42,012 - flask - INFO - Server Running on Port Number 62765
+2023-07-05 21:41:42,012 - flask - INFO - Running on http://localhost:62765
+2023-07-05 21:41:56,320 - flask - INFO - Email sent to accountId : 712020:1ebb1ef2-2a5c-4c2b-9ebd-bf8c2294bc26
+2023-07-05 21:42:02,981 - flask - INFO - Email sent to accountId : 712020:d477ee35-3fb4-4557-b3a9-1bfb125e6303
+2023-07-05 21:42:03,648 - flask - INFO - Email Sent to all Users
+2023-07-05 21:42:03,651 - flask - INFO - GET request -- status-code : 200
+2023-07-05 21:43:36,268 - flask - INFO - Server Running on Port Number 62799
+2023-07-05 21:43:36,269 - flask - INFO - Running on http://localhost:62799
+2023-07-05 21:43:51,046 - flask - INFO - Email sent to accountId : 712020:1ebb1ef2-2a5c-4c2b-9ebd-bf8c2294bc26
+2023-07-05 21:43:58,524 - flask - INFO - Email sent to accountId : 712020:d477ee35-3fb4-4557-b3a9-1bfb125e6303
+2023-07-05 21:43:59,157 - flask - INFO - Email Sent to all Users
+2023-07-05 21:43:59,162 - flask - INFO - GET request -- status-code : 200
+2023-07-05 21:45:08,648 - flask - INFO - Server Running on Port Number 62821
+2023-07-05 21:45:08,648 - flask - INFO - Running on http://localhost:62821
+2023-07-05 21:45:22,558 - flask - INFO - Email sent to accountId : 712020:1ebb1ef2-2a5c-4c2b-9ebd-bf8c2294bc26
+2023-07-05 21:45:29,845 - flask - INFO - Email sent to accountId : 712020:d477ee35-3fb4-4557-b3a9-1bfb125e6303
+2023-07-05 21:45:30,498 - flask - INFO - Email Sent to all Users
+2023-07-05 21:45:30,504 - flask - INFO - GET request -- status-code : 200
+2023-07-05 21:46:32,362 - flask - INFO - Server Running on Port Number 62847
+2023-07-05 21:46:32,362 - flask - INFO - Running on http://localhost:62847
+2023-07-05 21:48:10,969 - flask - INFO - Server Running on Port Number 62892
+2023-07-05 21:48:10,969 - flask - INFO - Running on http://localhost:62892
+2023-07-05 21:48:26,786 - flask - INFO - Server Running on Port Number 62898
+2023-07-05 21:48:26,786 - flask - INFO - Running on http://localhost:62898
+2023-07-05 21:49:12,712 - flask - INFO - Server Running on Port Number 62920
+2023-07-05 21:49:12,713 - flask - INFO - Running on http://localhost:62920
+
+
+2023-07-05 21:49:41,639 - flask - INFO - Server Running on Port Number 62923
+2023-07-05 21:49:41,639 - flask - INFO - Running on http://localhost:62923
+2023-07-05 21:50:28,667 - flask - INFO - Server Running on Port Number 62931
+2023-07-05 21:50:28,667 - flask - INFO - Running on http://localhost:62931
+2023-07-05 21:51:07,633 - flask - INFO - Server Running on Port Number 62939
+2023-07-05 21:51:07,633 - flask - INFO - Running on http://localhost:62939
+2023-07-05 21:52:53,249 - flask - INFO - Server Running on Port Number 62953
+2023-07-05 21:52:53,250 - flask - INFO - Running on http://localhost:62953
+2023-07-05 21:53:21,292 - flask - INFO - Server Running on Port Number 62969
+2023-07-05 21:53:21,292 - flask - INFO - Running on http://localhost:62969
+2023-07-05 21:55:44,317 - flask - INFO - Server Running on Port Number 63003
+2023-07-05 21:55:44,317 - flask - INFO - Running on http://localhost:63003
+2023-07-05 21:56:37,627 - flask - INFO - Server Running on Port Number 63028
+2023-07-05 21:56:37,627 - flask - INFO - Running on http://localhost:63028
+2023-07-05 21:58:50,313 - flask - INFO - Server Running on Port Number 63053
+2023-07-05 21:58:50,313 - flask - INFO - Running on http://localhost:63053
+2023-07-05 21:59:33,031 - flask - INFO - Server Running on Port Number 63062
+2023-07-05 21:59:33,031 - flask - INFO - Running on http://localhost:63062
+2023-07-05 22:13:46,932 - flask - INFO - Server Running on Port Number 63108
+2023-07-05 22:13:46,932 - flask - INFO - Running on http://localhost:63108
+2023-07-05 22:14:06,558 - flask - INFO - Server Running on Port Number 63116
+2023-07-05 22:14:06,558 - flask - INFO - Running on http://localhost:63116
+2023-07-05 22:15:33,153 - flask - INFO - Server Running on Port Number 63128
+2023-07-05 22:15:33,153 - flask - INFO - Running on http://localhost:63128
+2023-07-05 22:17:42,902 - flask - INFO - Server Running on Port Number 63139
+2023-07-05 22:17:42,902 - flask - INFO - Running on http://localhost:63139
+2023-07-05 22:18:23,455 - flask - INFO - Server Running on Port Number 63161
+2023-07-05 22:18:23,455 - flask - INFO - Running on http://localhost:63161
+2023-07-05 22:18:29,302 - flask - INFO - Server Shutdown Successful
+2023-07-05 22:18:49,069 - flask - INFO - Server Running on Port Number 63166
+2023-07-05 22:18:49,069 - flask - INFO - Running on http://localhost:63166
+2023-07-05 22:19:09,062 - flask - INFO - Server Running on Port Number 63182
+2023-07-05 22:19:09,062 - flask - INFO - Running on http://localhost:63182
+2023-07-05 22:19:29,154 - flask - INFO - Server Running on Port Number 63187
+2023-07-05 22:19:29,155 - flask - INFO - Running on http://localhost:63187
+2023-07-05 22:19:36,233 - flask - INFO - Server Shutdown Successful
