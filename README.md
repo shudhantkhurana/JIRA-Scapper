@@ -30,4 +30,4 @@ Instead a demoConfig directory is provided that contains a format of the above m
 
 ## The email sent looks like this :-
 
-![Alt text](image.png)
+![demo Output](image-1.png)
