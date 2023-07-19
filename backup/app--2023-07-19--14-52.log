@@ -1,0 +1,42 @@
+2023-07-19 14:47:38,804 - flask - INFO - Server Running on Port Number 54399
+2023-07-19 14:47:38,805 - flask - INFO - Running on http://localhost:54399
+2023-07-19 14:47:50,790 - flask - INFO - request -- Send email to all users
+2023-07-19 14:47:50,790 - app - INFO - Requesting projects for given Config
+2023-07-19 14:47:51,837 - app - INFO - Response recieved for given Config
+2023-07-19 14:47:51,838 - app - INFO - All projects Scraped for given
+2023-07-19 14:47:53,310 - app - INFO - Requesting for issues for projectKey : ES
+2023-07-19 14:47:53,311 - app - INFO - Response Recieved for projectKey : ES
+2023-07-19 14:47:53,316 - app - INFO - 23 issuse(s) found for projectKey : ES
+2023-07-19 14:47:53,318 - app - INFO - Response Scrapped Successfully for projectKey : ES
+2023-07-19 14:47:53,321 - app - INFO - Requesting Response for accountId : 712020:1ebb1ef2-2a5c-4c2b-9ebd-bf8c2294bc26
+2023-07-19 14:47:53,846 - app - INFO - Response Recieved for accountId : 712020:1ebb1ef2-2a5c-4c2b-9ebd-bf8c2294bc26
+2023-07-19 14:47:53,847 - app - INFO - e-mail Address found for accountId : 712020:1ebb1ef2-2a5c-4c2b-9ebd-bf8c2294bc26 
+2023-07-19 14:47:58,750 - flask - INFO - Email sent to accountId : 712020:1ebb1ef2-2a5c-4c2b-9ebd-bf8c2294bc26
+2023-07-19 14:47:58,751 - app - INFO - Requesting Response for accountId : 712020:d477ee35-3fb4-4557-b3a9-1bfb125e6303
+2023-07-19 14:47:59,297 - app - INFO - Response Recieved for accountId : 712020:d477ee35-3fb4-4557-b3a9-1bfb125e6303
+2023-07-19 14:47:59,298 - app - INFO - e-mail Address found for accountId : 712020:d477ee35-3fb4-4557-b3a9-1bfb125e6303 
+2023-07-19 14:48:03,688 - flask - INFO - Email sent to accountId : 712020:d477ee35-3fb4-4557-b3a9-1bfb125e6303
+2023-07-19 14:48:04,573 - app - INFO - Requesting for issues for projectKey : SUP
+2023-07-19 14:48:04,575 - app - INFO - Response Recieved for projectKey : SUP
+2023-07-19 14:48:04,576 - app - INFO - 0 issuse(s) found for projectKey : SUP
+2023-07-19 14:48:04,577 - app - INFO - Response Scrapped Successfully for projectKey : SUP
+2023-07-19 14:48:04,581 - flask - INFO - Email Sent to all Users
+2023-07-19 14:48:04,584 - flask - INFO - GET HTTP request -- status-code : 200
+2023-07-19 14:48:06,626 - flask - INFO - request -- Send mail to all managers
+2023-07-19 14:48:06,627 - app - INFO - Requesting projects for given Config
+2023-07-19 14:48:07,307 - app - INFO - Response recieved for given Config
+2023-07-19 14:48:07,309 - app - INFO - All projects Scraped for given
+2023-07-19 14:48:08,680 - app - INFO - Requesting for issues for projectKey : ES
+2023-07-19 14:48:08,681 - app - INFO - Response Recieved for projectKey : ES
+2023-07-19 14:48:08,694 - app - INFO - 23 issuse(s) found for projectKey : ES
+2023-07-19 14:48:08,695 - app - INFO - Response Scrapped Successfully for projectKey : ES
+2023-07-19 14:48:13,680 - flask - INFO - Email sent to shudhantkhurana@gmail.com
+2023-07-19 14:48:17,675 - flask - INFO - Email sent to ue208103.shudhant.it@gmail.com
+2023-07-19 14:48:18,349 - app - INFO - Requesting for issues for projectKey : SUP
+2023-07-19 14:48:18,350 - app - INFO - Response Recieved for projectKey : SUP
+2023-07-19 14:48:18,352 - app - INFO - 0 issuse(s) found for projectKey : SUP
+2023-07-19 14:48:18,354 - app - INFO - Response Scrapped Successfully for projectKey : SUP
+2023-07-19 14:48:18,363 - flask - ERROR - No manager found for project : SuperStego
+2023-07-19 14:48:18,364 - flask - INFO - Email sent to all Managers
+2023-07-19 14:48:18,369 - flask - INFO - GET HTTP request -manager- status-code : 200
+2023-07-19 14:48:20,445 - flask - INFO - Server Shutdown Successful

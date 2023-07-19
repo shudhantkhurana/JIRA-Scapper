@@ -52,6 +52,10 @@
       font-weight: bolder;
       text-decoration: underline;
     }
+
+    a {
+      text-decoration: none;
+    }
   </style>
 </head>
 
@@ -78,7 +82,10 @@
   <div class="issue-body">
     <ul>
       {% for issue in allStatusTypes[statusType] %}
-      <li>{{issue['key']}} - {{issue['summary']}}</li>
+      <li>
+        {% set url = url + issue['key']%}
+        <a href={{ url }}>{{issue['key']}} - {{issue['summary']}}</a>
+      </li>
       {% endfor %}
     </ul>
   </div>

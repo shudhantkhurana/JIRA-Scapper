@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Radisys</title>
+    <style>
+        /* Navbar styles */
+        .navbar {
+            /* background-color: #eeeeee; */
+            background-color: #eeeeee;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .navbar-logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-logo img {
+            width: auto;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .navbar-employee {
+            display: flex;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+        }
+
+        .body {
+            text-align: left;
+            margin: 20px;
+            font-size: large;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: normal;
+            letter-spacing: .5px;
+            word-wrap: break-word;
+            line-height: 150%;
+
+        }
+
+        .issue-heading {
+            text-align: left;
+            margin: 20px;
+            font-size: x-large;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: bolder;
+            text-decoration: underline;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="https://asset.brandfetch.io/idVH1Mnsur/idu1Ycy-bw.png" alt="Company Logo">
+        </div>
+        <div class="navbar-employee">
+            <span>{{ managerName }}</span>
+        </div>
+    </nav>
+
+    <div class="body">
+        Good Morning, {{ managerName }}
+        <br />
+        Following issues for project {{ projectName }} are open in JIRA.
+    </div>
+
+    {% for statusType in AllStatus %}
+    <div class="issue-heading">
+        {{statusType}}
+    </div>
+    <div class="issue-body">
+        <ul>
+            {% for issue in AllStatus[statusType] %}
+            <li>
+                {% set url = url + issue['key']%}
+                <a href={{ url }}>{{issue['key']}} - {{issue['summary']}}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endfor %}
+
+
+
+
+
+
+
+
+</body>
+
+</html>

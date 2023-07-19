@@ -4,6 +4,8 @@ import mailConfig
 from get_issues import getIssues
 from get_projects import allProjects
 from get_email import fetch_email
+from config import JIRA_URL
+from fetch_managers import getManagers
 import logging.config
 logging.config.fileConfig('logging.conf', disable_existing_loggers=False)
 flask_logger = logging.getLogger('flask')
@@ -17,7 +19,7 @@ mail = Mail(app)
 
 @app.route('/', methods=["GET"])
 def index():
-    flask_logger.info(f"request -- GET HTTP")
+    flask_logger.info(f"request -- Send email to all users")
     
     try:
         # fetching all projects
@@ -75,18 +77,20 @@ def index():
                             allStatusTypes[issue['status']].append(issue)
         
 
-        
+    
                     recipients = [email]
+                    
                     subject = f'Assigned issues for project - {projectName}'
 
                     # Render the template with the desired data
                     msg = Message(subject=subject, recipients=recipients, sender='demo.shudhant@gmail.com')
-                    msg.html = render_template('index.html', displayName=displayName,allStatusTypes=allStatusTypes)
+                    msg.html = render_template('index.html', displayName=displayName,allStatusTypes=allStatusTypes,url=f'{JIRA_URL}/jira/software/projects/ES/boards/1?selectedIssue=')
                     
                     mail.send(msg)
                     flask_logger.info(f"Email sent to accountId : {accountId}")
 
         data = {
+            'success' : True,
             "message":f"Email sent to all users"
         }
         status_code = 200
@@ -101,35 +105,104 @@ def index():
     
     except Exception as e:
         data = {
+            'succcess' : False,
             "message":f"Failed to send the email error - {e}"
         }
         status_code = 500
         response = make_response(jsonify(data),status_code)
         response.headers['Content-Type'] = 'appplication/json'
         
-        flask_logger.logger(f"Failed to send email, error : {e}")
+        flask_logger.error(f"Failed to send email, error : {e}")
         
         return response
+    
+    
+    
+    
+    
+@app.route('/managers',methods=['GET'])
+def sendEmailToManagers():
+    flask_logger.info("request -- Send mail to all managers")
+    
+    try:
+        projects = allProjects()
+        for project in projects:
+            projectName = project['projectName']
+            projectKey = project['projectKey']
+            
+            issues = getIssues(projectKey)
+            AllStatus =dict()
+            
+            for assignee in issues:
+                for issue in issues[assignee]:
+                    if issue['status'] not in AllStatus:
+                        AllStatus[issue['status']] = []
+            
+            for assignee in issues:
+                for issue in issues[assignee]:
+                    AllStatus[issue['status']].append(issue)
+            
+        
+            allManagers = getManagers(projectKey)
+            
+            if allManagers == -1:
+                flask_logger.error(f"No manager found for project : {projectName}")
+            else:
+                for manager in allManagers:
+                    managerName = manager[0]
+                    managerEmail = manager[1]
+                    
+                    
+                    recipients = [managerEmail]
+                    
+                    subject = f'All issues for project - {projectName}'
+                    
+                    msg = Message(subject=subject, recipients=recipients, sender='demo.shudhant@gmail.com')
+                    msg.html = render_template('manager.html', managerName=managerName, AllStatus=AllStatus, url=f'{JIRA_URL}/jira/software/projects/ES/boards/1?selectedIssue=',projectName=projectName)
+                    
+                    mail.send(msg)
+                    flask_logger.info(f'Email sent to {managerEmail}')
+                    
+        data = {
+            'success' : True,
+            'message' : 'Email sent to all managers'
+        }
+        status_code = 200
+        response = make_response(jsonify(data),status_code)
+        response.headers['Content-Type'] = 'appplication/json'
+        
+        flask_logger.info("Email sent to all Managers")
 
-
+        return response
+                    
+    except Exception as e:
+        data = {
+            'succcess' : False,
+            "message":f"Failed to send the email to manager, error - {e}"
+        }
+        status_code = 500
+        response = make_response(jsonify(data),status_code)
+        response.headers['Content-Type'] = 'appplication/json'
+        
+        flask_logger.error(f"Failed to send email to manager, error : {e}")
+        
+        return response
+    
+    
+    
+    
+    
+    
 
 @app.route('/shutdown', methods=['GET'])
 def stopServer():
     try:
         os._exit(0)
-        # data = {
-        #         "message":f"Server Shutdown Successful"
-        #     }
-        # status_code = 200
-        # response = make_response(jsonify(data),status_code)
-        # response.headers['Content-Type'] = 'appplication/json'
-    
-        # return response 
-        
     
     except Exception as e:
         
         data = {
+                'success' : True,
                 "message":f"Server Shutdown Unsuccessful"
             }
         status_code = 500

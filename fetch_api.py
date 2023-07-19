@@ -10,19 +10,32 @@ with open('port.txt','r') as f:
     
 while True:
     
-    response = requests.get(
+    response1 = requests.get(
         f'http://localhost:{port}',
         headers={'Content-Type': 'application/json'},
     )
     
-    if response.status_code == 200:
-        flask_logger.info(f"GET HTTP request -- status-code : {response.status_code}")
-        try:
-            requests.get(
-                f'http://localhost:{port}/shutdown',
-                headers={'Content-Type': 'application/json'}
-            )
-        except:
-            flask_logger.info("Server Shutdown Successful")
-    
+    if response1.status_code == 200:
+        flask_logger.info(f"GET HTTP request -- status-code : {response1.status_code}")
+        
+        response2 = requests.get(
+            f'http://localhost:{port}/managers',
+            headers={'Content-Type': 'application/json'},
+        )
+        
+        if response2.status_code == 200:
+            flask_logger.info(f"GET HTTP request -manager- status-code : {response2.status_code}")
+        
+            try:
+                requests.get(
+                    f'http://localhost:{port}/shutdown',
+                    headers={'Content-Type': 'application/json'}
+                )
+            except:
+                flask_logger.info("Server Shutdown Successful")
+        
+            break
+        else:
+            break
+    else:
         break

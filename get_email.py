@@ -51,7 +51,6 @@ def fetch_email(accountId):
                 app_logger.info(f'e-mail Address found for accountId : {accountId} ')
                 return userEmail,displayName
                 # type - str
-            else:
                 app_logger.error(f'No e-mail Address found for accountId : {accountId} ')
                 return None
         

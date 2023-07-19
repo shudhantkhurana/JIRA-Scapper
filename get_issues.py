@@ -79,3 +79,6 @@ def getIssues(projectKey):
         app_logger.error(f"Something went Wrong while fetching issues for projectKey : {projectKey}")
         return None
         
+
+if __name__=="__main__":
+    print(getIssues("ES"))
