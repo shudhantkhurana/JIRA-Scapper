@@ -17,8 +17,9 @@ app = Flask(__name__)
 mailConfig.app_config(app)
 mail = Mail(app)
 
-@app.route('/', methods=["GET"])
+@app.route('/all', methods=["GET"])
 def index():
+    # to send email to all users registred in atlassian JIRA
     flask_logger.info(f"request -- Send email to all users")
     
     try:
@@ -88,7 +89,8 @@ def index():
                     
                     mail.send(msg)
                     flask_logger.info(f"Email sent to accountId : {accountId}")
-
+                    
+        # setting response for get request
         data = {
             'success' : True,
             "message":f"Email sent to all users"
@@ -122,6 +124,7 @@ def index():
     
 @app.route('/managers',methods=['GET'])
 def sendEmailToManagers():
+    # to send email to users not registerd in atlassian JIRA (eg. managers)
     flask_logger.info("request -- Send mail to all managers")
     
     try:
@@ -142,7 +145,7 @@ def sendEmailToManagers():
                 for issue in issues[assignee]:
                     AllStatus[issue['status']].append(issue)
             
-        
+            #  fetching manager's details from database
             allManagers = getManagers(projectKey)
             
             if allManagers == -1:
@@ -162,7 +165,8 @@ def sendEmailToManagers():
                     
                     mail.send(msg)
                     flask_logger.info(f'Email sent to {managerEmail}')
-                    
+        
+        # setting response for get request
         data = {
             'success' : True,
             'message' : 'Email sent to all managers'
@@ -213,7 +217,7 @@ def stopServer():
 
         
 def setPort():
-    
+    # To set port number
     sock = socket.socket()
     sock.bind(('',0))
     port = sock.getsockname()[1]

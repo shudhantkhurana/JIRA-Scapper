@@ -11,7 +11,7 @@ with open('port.txt','r') as f:
 while True:
     
     response1 = requests.get(
-        f'http://localhost:{port}',
+        f'http://localhost:{port}/all',
         headers={'Content-Type': 'application/json'},
     )
     
