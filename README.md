@@ -31,3 +31,6 @@ Instead a demoConfig directory is provided that contains a format of the above m
 ## The email sent looks like this :-
 
 ![demo Output](image-1.png)
+
+## Project PPT
+https://docs.google.com/presentation/d/1_eHeufdFWI3et7zhLjLIzlaVLcZFkOGI/edit?usp=sharing&ouid=106382812179893290056&rtpof=true&sd=true
